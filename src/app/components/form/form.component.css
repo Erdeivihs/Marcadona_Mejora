@@ -1,0 +1,15 @@
+div.form-input-group {
+    margin: auto;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+form > button {
+    margin-top: 20px;
+}

@@ -1,0 +1,53 @@
+<form [formGroup]="formulario" (ngSubmit)="onSubmit(formulario)">
+
+    <div class="form-input-group">
+
+        <mat-form-field appearance="fill">
+
+            <mat-label>Nombre</mat-label>
+
+            <input matInput formControlName="Nom">
+
+            <mat-error>
+                Please provide a name.
+            </mat-error>
+            
+        </mat-form-field>
+
+    </div>
+
+    <div class="form-input-group">
+
+        <mat-form-field appearance="fill">
+
+            <mat-label>Precio</mat-label>
+
+            <input matInput formControlName="Precio">
+
+            <mat-error>
+                Please provide a valid email address.
+            </mat-error>
+            
+        </mat-form-field>
+
+    </div>
+
+    <div class="form-input-group">
+
+        <mat-form-field appearance="fill">
+
+            <mat-label>Tipo</mat-label>
+
+            <input matInput formControlName="message">
+
+            <mat-error>
+                Messages must be at least 15 characters long.
+            </mat-error>
+            
+        </mat-form-field>
+
+    </div>
+
+    <button mat-raised-button type="submit" [disabled]="formulario.invalid">Send</button>
+
+</form>
